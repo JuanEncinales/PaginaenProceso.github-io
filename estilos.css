@@ -1,0 +1,71 @@
+body {
+	background-color: #000;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh; /* Establece la altura del cuerpo al 100% de la ventana */
+	margin: 0;
+	padding: 0; /* Ajusta el relleno según tus necesidades */
+	overflow-y: hidden;
+}
+
+.contenedor {
+	display: flex;
+	justify-content: space-between; /* Distribuye los elementos en los extremos (izquierda y derecha) */
+	align-items: center;
+	width: 100%; /* Establece el ancho del contenedor al 80% del padre */
+}
+
+h1 {
+	font-size: 40px;
+	margin-bottom: 40px;
+	margin-left: 100px;
+	margin-right: 100px;
+	text-align: center; /* Alinea el encabezado al centro */
+}
+
+.parrafoActualizando {
+	font-size: 25px;
+	margin-right: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 500px;
+	text-align: center; /* Alinea el párrafo al centro */
+}
+.informacion_personal {
+	color: aqua;
+}
+
+.logoActualizando {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: right;
+	width: 600px;
+	position: relative; /* Necesario para que los pseudo-elementos sean posicionados correctamente */
+	margin-left: 20px;
+}
+.logoActualizando::before {
+	content: ''; /* Necesario para el pseudo-elemento */
+	position: absolute; /* Posiciona el pseudo-elemento de forma absoluta */
+	top: 0;
+	bottom: 0;
+	left: -20px;
+	width: 3px; /* Ancho de la línea izquierda */
+	background-color: #ffffff; /* Color de la línea izquierda */
+}
+
+.logo {
+	fill: #fff;
+}
+
+/* .logo:hover {
+	box-shadow: 0 0 40px 10px #ffff;
+} */
+
+/* hr {
+	border: 1px solid #fff;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+} */
