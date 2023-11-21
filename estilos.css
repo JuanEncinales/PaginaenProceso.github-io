@@ -59,13 +59,36 @@ h1 {
 	fill: #fff;
 }
 
-/* .logo:hover {
-	box-shadow: 0 0 40px 10px #ffff;
-} */
+@media screen and (max-width: 600px) {
+	.contenedor {
+		flex-direction: column; /* Cambia la dirección del contenedor a columna en dispositivos móviles */
+		align-items: center;
+	}
 
-/* hr {
-	border: 1px solid #fff;
-	width: 100%;
-	margin-top: 20px;
-	margin-bottom: 20px;
-} */
+	h1 {
+		font-size: 20px;
+		margin: 15px 15px; /* Ajusta el margen según tus necesidades */
+		text-align: center;
+	}
+
+	.parrafoActualizando {
+		font-size: 17px;
+		width: 80%;
+		margin: 0 auto; /* Centra el elemento utilizando márgenes automáticos */
+		text-align: center;
+	}
+
+	.informacion_personal {
+		color: aqua;
+	}
+	.logoActualizando {
+		margin: 15px 15px;
+		text-align: right;
+		width: 350px;
+		position: relative; /* Necesario para que los pseudo-elementos sean posicionados correctamente */
+	}
+
+	.logoActualizando::before {
+		display: none; /* Oculta la línea izquierda en dispositivos móviles */
+	}
+}
